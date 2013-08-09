@@ -8,8 +8,7 @@ So this is how you can use it right away.  Simply add the `blink_is_back.js` lib
       setInterval(function() {
         var t = document.getElementsByTagName("blink"), l = t.length;
         while(l--) {
-          v = 'visible'; s = t[l].style, s.visibility = s.visibility == v ? "hidden" : v;
+          var v = 'visible', s = t[l].style, s.visibility = s.visibility == v ? "hidden" : v;
         }
       }, 999);
     });
-
